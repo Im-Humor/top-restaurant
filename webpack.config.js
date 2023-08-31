@@ -5,6 +5,9 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
+    homecontent: './src/homecontent.js',
+    menucontent: './src/menucontent.js',
+    contactcontent: './src/contactcontent.js',
   },
   devtool: 'eval',
   devServer: {
