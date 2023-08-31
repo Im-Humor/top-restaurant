@@ -7,7 +7,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunktop_restaurant"] = self["webpackChunktop_restaurant"] || []).push([["homecontent"],{
+(self["webpackChunktop_restaurant"] = self["webpackChunktop_restaurant"] || []).push([["contactcontent"],{
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
 /*!*************************************************************!*\
@@ -152,6 +152,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__("./src/homecontent.js"));
+/******/ var __webpack_exports__ = (__webpack_exec__("./src/contactcontent.js"));
 /******/ }
 ]);
