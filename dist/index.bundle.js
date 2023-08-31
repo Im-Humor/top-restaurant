@@ -109,13 +109,43 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/contactcontent.js":
+/*!*******************************!*\
+  !*** ./src/contactcontent.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ updateContactContent)\n/* harmony export */ });\n/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! . */ \"./src/index.js\");\n\n\nfunction updateContactContent() {\n    ___WEBPACK_IMPORTED_MODULE_0__.innerContent.innerHTML = \"\";\n    ___WEBPACK_IMPORTED_MODULE_0__.innerContent.innerHTML = \"<h2>Test contact content</h2>\";\n    ___WEBPACK_IMPORTED_MODULE_0__.innerContent.removeEventListener(\"click\", updateContactContent);\n}\n\n//# sourceURL=webpack://top-restaurant/./src/contactcontent.js?");
+
+/***/ }),
+
+/***/ "./src/homecontent.js":
+/*!****************************!*\
+  !*** ./src/homecontent.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ updateHomeContent)\n/* harmony export */ });\n/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ \"./src/index.js\");\n\n\nfunction updateHomeContent() {\n    _index_js__WEBPACK_IMPORTED_MODULE_0__.innerContent.innerHTML = \"\";\n    _index_js__WEBPACK_IMPORTED_MODULE_0__.innerContent.innerHTML = \"<h2>Test content</h2>\";\n    _index_js__WEBPACK_IMPORTED_MODULE_0__.innerContent.removeEventListener(\"click\", updateHomeContent);\n}\n\n//# sourceURL=webpack://top-restaurant/./src/homecontent.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createAppend)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nfunction createAppend(objectType, appendedParent, newClass = 0) {\n    const newElement = document.createElement(objectType);\n    if (typeof newClass == 'string') {\n        newElement.classList.add(newClass)\n    }\n    appendedParent.appendChild(newElement);\n    return newElement;\n}\n\nconst page = document.querySelector(\"#content\");\n\n// create grid sections and append to page content area\nconst headerContent = createAppend(\"div\", page, \"header\");\nconst menuContent = createAppend(\"div\", page, \"nav-menu\");\nconst innerContent = createAppend(\"div\", page, \"inner-content\");\nconst footerContent = createAppend(\"div\", page, \"footer\");\n\n// create navmenu links\nconst navMenu = createAppend(\"ul\", menuContent)\nconst navHomeTab = createAppend(\"li\", navMenu)\nconst navMenuTab = createAppend(\"li\", navMenu)\nconst navContactTab = createAppend(\"li\", navMenu)\n\nnavHomeTab.innerHTML = \"<h3>Home</h3>\";\nnavMenuTab.innerHTML = \"<h3>Menu</h3>\";\nnavContactTab.innerHTML = \"<h3>Contact</h3>\";\n\n// populate header\nheaderContent.innerHTML = \"<h1>Best Restaurant Ever</h1>\"\n\n// populate footer\n\nfooterContent.innerHTML = \"<h5>Copyright Moi</h5>\"\n\n//# sourceURL=webpack://top-restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createAppend),\n/* harmony export */   innerContent: () => (/* binding */ innerContent)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _homecontent_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./homecontent.js */ \"./src/homecontent.js\");\n/* harmony import */ var _menucontent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menucontent */ \"./src/menucontent.js\");\n/* harmony import */ var _contactcontent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contactcontent */ \"./src/contactcontent.js\");\n\n\n\n\n\nfunction createAppend(objectType, appendedParent, newClass = 0) {\n    const newElement = document.createElement(objectType);\n    if (typeof newClass == 'string') {\n        newElement.classList.add(newClass)\n    }\n    appendedParent.appendChild(newElement);\n    return newElement;\n}\n\nconst page = document.querySelector(\"#content\");\n\n// create grid sections and append to page content area\nconst headerContent = createAppend(\"div\", page, \"header\");\nconst menuContent = createAppend(\"div\", page, \"nav-menu\");\nconst innerContent = createAppend(\"div\", page, \"inner-content\");\nconst footerContent = createAppend(\"div\", page, \"footer\");\n\n// create navmenu links\nconst navMenu = createAppend(\"ul\", menuContent)\nconst navHomeTab = createAppend(\"li\", navMenu)\nconst navMenuTab = createAppend(\"li\", navMenu)\nconst navContactTab = createAppend(\"li\", navMenu)\n\nnavHomeTab.innerHTML = \"<h3>Home</h3>\";\nnavMenuTab.innerHTML = \"<h3>Menu</h3>\";\nnavContactTab.innerHTML = \"<h3>Contact</h3>\";\n\n// populate header\nheaderContent.innerHTML = \"<h1>Best Restaurant Ever</h1>\"\n\n// populate footer\nfooterContent.innerHTML = \"<h5>Copyright Moi</h5>\"\n\n// add event listeners\nnavHomeTab.addEventListener(\"click\", _homecontent_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])\nnavMenuTab.addEventListener(\"click\", _menucontent__WEBPACK_IMPORTED_MODULE_2__[\"default\"])\nnavContactTab.addEventListener(\"click\", _contactcontent__WEBPACK_IMPORTED_MODULE_3__[\"default\"])\n\n;(0,_homecontent_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack://top-restaurant/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menucontent.js":
+/*!****************************!*\
+  !*** ./src/menucontent.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ updateMenuContent)\n/* harmony export */ });\n/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! . */ \"./src/index.js\");\n\n\nfunction updateMenuContent() {\n    ___WEBPACK_IMPORTED_MODULE_0__.innerContent.innerHTML = \"\";\n    ___WEBPACK_IMPORTED_MODULE_0__.innerContent.innerHTML = \"<h2>Test menu content</h2>\";\n    ___WEBPACK_IMPORTED_MODULE_0__.innerContent.removeEventListener(\"click\", updateMenuContent);\n}\n\n//# sourceURL=webpack://top-restaurant/./src/menucontent.js?");
 
 /***/ })
 
